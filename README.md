@@ -25,8 +25,8 @@ No cloud uploads. No tracking. No bloat.
 ### Step 1: Clone or Download the Repository
 
 ```bash
-git clone https://github.com/yourusername/priva_pdf.git
-cd priva_pdf
+git clone https://github.com/salveendutt/priva-pdf.git
+cd priva-pdf
 ```
 
 ### Step 2: Create a Virtual Environment
