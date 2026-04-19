@@ -1,42 +1,33 @@
-# sv
+# 🔒 Priva PDF
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+> Built with **SvelteKit + TypeScript** — runs entirely in the browser, no backend.
 
-## Creating a project
+I built this because I wasn't comfortable uploading sensitive documents — passports, bank statements — to third-party servers.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Everything runs in your browser. Nothing is sent to a server. Works in airplane mode.
 
-```sh
-# create a new project
-npx sv create my-app
-```
+**Merge, split, compress.** That's it.
 
-To recreate this project with the same configuration:
+![Priva PDF](assets/priva_pdf_frontpage.png)
 
-```sh
-# recreate this project
-npx sv@0.15.1 create --template minimal --types ts --install npm .
-```
+## Tech stack
 
-## Developing
+**SvelteKit + TypeScript**. PDF processing is done entirely client-side using [pdf-lib](https://pdf-lib.js.org/) — no backend, no server, no file uploads.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Run locally
 
-```sh
+```bash
+git clone https://github.com/salveen/priva-pdf.git
+cd priva-pdf
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Then open `http://localhost:5173` in your browser.
 
-To create a production version of your app:
+## Build & preview
 
-```sh
+```bash
 npm run build
+npm run preview
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
